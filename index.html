@@ -16,7 +16,29 @@
         body {
             font-size: 16px;
         }
+@font-face {
+            font-family: 'Panchang';
+            font-weight: 300;
+            font-style: normal;
+            src: url('/fonts/panchang-light.woff2') format('woff2'),
+                 url('/fonts/panchang-light.woff') format('woff'),
+                 url('/fonts/panchang-light.otf') format('opentype'),
+                 url('/fonts/panchang-light.ttf') format('truetype');
+            font-display: swap;
+        }
 
+        .panchang-title {
+            font-family: 'Panchang', sans-serif;
+            font-weight: 300;
+            font-size: 45px;
+            color: #333333;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .panchang-title {
+                font-size: 36px;
         body {
             -ms-overflow-style: none; /* for Internet Explorer, Edge */
             scrollbar-width: none; /* for Firefox */
@@ -71,7 +93,7 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="container" id="hero-header">
-                <p class="title has-text-white is-size-1">Easily Create your Perfect Mix Just for Now</p>
+                <h1 class="panchang-title">Easily Create your Perfect Mix Just for Now</h1>
                 <p class="subtitle has-text-white is-size-3 mt-5">Coming Soon</p>
             </div>
             <div class="container mt-6" id="hero-description">
