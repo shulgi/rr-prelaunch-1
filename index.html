@@ -1,125 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <link crossorigin="anonymous"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css"
-          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waitlist</title>
     <style>
-        body html {
-            height: 100vh;
-        }
-
-        body {
-            font-size: 16px;
-        }
-@font-face {
+        @font-face {
             font-family: 'Panchang';
             font-weight: 300;
             font-style: normal;
-            src: url('/fonts/panchang-light.woff2') format('woff2'),
-                 url('/fonts/panchang-light.woff') format('woff'),
-                 url('/fonts/panchang-light.otf') format('opentype'),
-                 url('/fonts/panchang-light.ttf') format('truetype');
+            src: url('/fonts/Panchang-Light.woff2') format('woff2'),
+                url('/fonts/Panchang-Light.woff') format('woff');
             font-display: swap;
         }
-
-        .panchang-title {
+        
+        body {
+            background-color: #141415;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+            color: white;
+        }
+        
+        h1 {
             font-family: 'Panchang', sans-serif;
             font-weight: 300;
             font-size: 45px;
-            color: #FFFFFF;
-            line-height: 1.2;
             margin-bottom: 20px;
         }
-
-        @media (max-width: 768px) {
-            .panchang-title {
-                font-size: 36px;
-        body {
-            -ms-overflow-style: none; /* for Internet Explorer, Edge */
-            scrollbar-width: none; /* for Firefox */
-            overflow-y: scroll;
+        
+        input[type="email"] {
+            width: 100px;
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
         }
-
-        body::-webkit-scrollbar {
-            display: none; /* for Chrome, Safari, and Opera */
-        }
-
-        .hero-body {
-            background-image: linear-gradient(
-                    rgba(0, 0, 0, 0.75),
-                    rgba(0, 0, 0, 0.75)
-            ),
-            url("not-black.png");
-            background-size: cover;
-        }
-
-        #email {
-            width: 100%;
-        }
-
-        @media screen and (min-width: 500px){
-            #email{
-                width: 66%;
-            }
-        }
-
-        @media screen and (min-width: 750px){
-            #email{
-                width: 33%;
-            }
-
-            #hero-description{
-                width: 66%;
-            }
-        }
-
-        #email-label {
-            display: none;
-        }
-
-        #hero-description {
-            font-size: 1.25em;
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
-    <title>Rebel Rebel</title>
 </head>
 <body>
-<section class="hero is-fullheight has-text-white">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <div class="container" id="hero-header">
-                <h1 class="panchang-title">Easily Create your Perfect Mix Just for Now</h1>
-                <p class="subtitle has-text-white is-size-3 mt-5">Coming Soon</p>
-            </div>
-            <div class="container mt-6" id="hero-description">
-                <p>coming soon...</p>
-            </div>
-            <form name="email" class="m-6" data-netlify="true" netlify="true">
-                <h3 class="has-text-weight-bold">Sign Up To be notified when it's ready</h3>
-                <div class="field my-5">
-                    <label class="label" for="email"
-                           id="email-label">Email</label>
-                    <div class="control is-medium">
-                        <input class="input is-primary is-rounded"
-                               id="email"
-                               name="email"
-                               placeholder="johndoe@gmail.com"
-                               required
-                               type="email"
-                        >
-                    </div>
-                </div>
-                <div class="control">
-                    <button class="button is-primary is-rounded">Submit</button>
-                </div>
-            </form>
-        </div>
+    <div class="container">
+        <h1>Join the waitlist</h1>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+        </form>
     </div>
-</section>
 </body>
 </html>
